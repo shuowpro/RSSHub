@@ -81,6 +81,20 @@ Category
 
 </RouteEn>
 
+## Fortnite
+
+### News
+
+<RouteEn author="lyqluis" example="/fortnite/news" path="/fortnite/news/:options?" :paramsDesc="['Params']" radar="1" puppeteer="1">
+
+-   `options.lang`, optional, language, eg. `/fortnite/news/lang=en-US`, common languages are listed below, more languages are available one the [official website](https://www.fortnite.com/news)
+
+| English (default) | Spanish | Japanese | French | Korean | Polish |
+| ----------------- | ------- | -------- | ------ | ------ | ------ |
+| en-US             | es-ES   | ja       | fr     | ko     | pl     |
+
+</RouteEn>
+
 ## Gamer Secret
 
 ### Latest News
@@ -269,9 +283,9 @@ For instance, in `https://store.steampowered.com/search/?specials=1&term=atelier
 
 Steam provides some official RSS feeds:
 
-- News home page: [https://store.steampowered.com/feeds/news/?l=english](https://store.steampowered.com/feeds/news/?l=english) the parameter `l=english` specifiy the language.
-- Game news rss can get from the rss buttom in page like this: [https://store.steampowered.com/news/app/648800/](https://store.steampowered.com/news/app/648800/), rss link will looks like： [https://store.steampowered.com/feeds/news/app/648800/?cc=US&l=english](https://store.steampowered.com/feeds/news/app/648800/?cc=US&l=english)
-- Steam group can add `/rss` behind Steam community URL to subscribe: [https://steamcommunity.com/groups/SteamLabs/rss](https://steamcommunity.com/groups/SteamLabs/rss) or add the `/feeds` in Steam News : [https://store.steampowered.com/feeds/news/group/35143931/](https://store.steampowered.com/feeds/news/group/35143931/)
+-   News home page: [https://store.steampowered.com/feeds/news/?l=english](https://store.steampowered.com/feeds/news/?l=english) the parameter `l=english` specifiy the language.
+-   Game news rss can get from the rss buttom in page like this: [https://store.steampowered.com/news/app/648800/](https://store.steampowered.com/news/app/648800/), rss link will looks like： [https://store.steampowered.com/feeds/news/app/648800/?cc=US&l=english](https://store.steampowered.com/feeds/news/app/648800/?cc=US&l=english)
+-   Steam group can add `/rss` behind Steam community URL to subscribe: [https://steamcommunity.com/groups/SteamLabs/rss](https://steamcommunity.com/groups/SteamLabs/rss) or add the `/feeds` in Steam News : [https://store.steampowered.com/feeds/news/group/35143931/](https://store.steampowered.com/feeds/news/group/35143931/)
 
 :::
 
@@ -280,3 +294,72 @@ Steam provides some official RSS feeds:
 ### Discussions
 
 <RouteEn author="whtsky" example="/steamgifts/discussions" path="/steamgifts/discussions/:category?" :paramsDesc="['category name, default to All']"/>
+
+## TapTap International
+
+::: warning Warning
+
+Due to the regional restrictions, an RSSHub deployment in China Mainland may not work on accessing the TapTap International Website.
+
+:::
+
+### Game Topics
+
+::: tip Tips
+
+Unlike TapTap China Mainland Website, the International Website has no BBS.
+
+:::
+
+### Game's Changelog
+
+<RouteEn author="hoilc ETiV" example="/taptap/intl/changelog/191001/zh_TW" path="/taptap/intl/changelog/:id/:lang?" :paramsDesc="['Game\'s App ID, you may find it from the URL of the Game', 'Language, checkout the table below for possible values, default is `en_US`']">
+
+#### Language Code
+
+| English (US) | 繁體中文 | 한국어 | 日本語 |
+| ----- | ----- | ----- | ----- |
+| en_US | zh_TW | ko_KR | ja_JP |
+
+</RouteEn>
+
+### Ratings & Reviews
+
+<RouteEn author="hoilc TonyRL ETiV" example="/taptap/intl/review/82354/new/zh_TW" path="/taptap/intl/review/:id/:order?/:lang?" :paramsDesc="['Game\'s App ID, you may find it from the URL of the Game', 'Sort Method, you may use `new` as the **Most Recent**, use `default` or leave it empty for the **Most Relevant**', 'Language, checkout the table below for possible values, default is `en_US`']">
+
+#### Sort Method
+
+| Most Relevant  | Most Recent |
+| -------------- | ---- |
+| default        | new  |
+
+#### Language Code
+
+| English (US) | 繁體中文 | 한국어 | 日本語 |
+| ----- | ----- | ----- | ----- |
+| en_US | zh_TW | ko_KR | ja_JP |
+
+</RouteEn>
+
+## War Thunder
+
+### News
+
+<RouteEn author="axojhf" example="/warthunder/news" path="/warthunder/news">
+
+News data from <https://warthunder.com/en/news/>
+The year, month and day provided under UTC time zone are the same as the official website, so please ignore the specific time!!!
+
+</RouteEn>
+
+## ファミ通
+
+### Category
+
+<RouteEn author="TonyRL" example="/famitsu/category/new-article" path="/famitsu/category/:category?" :paramsDesc="['Category, see table below, `new-article` by default']" radar="1">
+
+| 新着          | PS5 | Switch | PS4 | ニュース | ゲームニュース   | PR TIMES | 動画     | 特集・企画記事         | インタビュー    | 取材・リポート      | レビュー   | インディーゲーム   |
+| ----------- | --- | ------ | --- | ---- | --------- | -------- | ------ | --------------- | --------- | ------------ | ------ | ---------- |
+| new-article | ps5 | switch | ps4 | news | news-game | prtimes  | videos | special-article | interview | event-report | review | indie-game |
+
+</RouteEn>
