@@ -903,6 +903,20 @@
       }
     ]
   },
+  "5eplay.com": {
+    "_name": "5EPLAY",
+    "csgo": [
+      {
+        "title": "新闻列表",
+        "docs": "https://docs.rsshub.app/game.html#_5eplay-xin-wen-lie-biao",
+        "source": [
+          "/",
+          "/article"
+        ],
+        "target": "/5eplay/article"
+      }
+    ]
+  },
   "6parkbbs.com": {
     "_name": "留园网",
     "club": [
@@ -1529,6 +1543,35 @@
         "docs": "https://docs.rsshub.app/travel.html#zhong-guo-guo-ji-hang-kong-gong-si",
         "source": "/",
         "target": "/airchina/announcement"
+      }
+    ]
+  },
+  "aisixiang.com": {
+    "_name": "爱思想",
+    ".": [
+      {
+        "title": "栏目",
+        "docs": "https://docs.rsshub.app/reading.html#ai-si-xiang",
+        "source": [
+          "/data/search",
+          "/"
+        ]
+      },
+      {
+        "title": "排行",
+        "docs": "https://docs.rsshub.app/reading.html#ai-si-xiang",
+        "source": [
+          "/toplist",
+          "/"
+        ]
+      },
+      {
+        "title": "思想库（专栏）",
+        "docs": "https://docs.rsshub.app/reading.html#ai-si-xiang",
+        "source": [
+          "/thinktank",
+          "/"
+        ]
       }
     ]
   },
@@ -2276,6 +2319,18 @@
           "/"
         ],
         "target": "/baai/hub/comments"
+      }
+    ]
+  },
+  "bad.news": {
+    "_name": "Bad.news",
+    ".": [
+      {
+        "title": "通用",
+        "docs": "https://docs.rsshub.app/new-media.html#bad-news-tong-yong",
+        "source": [
+          "/"
+        ]
       }
     ]
   },
@@ -4767,6 +4822,15 @@
       }
     ]
   },
+  "comicat.org": {
+    "_name": "Comicat",
+    ".": [
+      {
+        "title": "搜索关键词",
+        "docs": "https://docs.rsshub.app/anime.html#comicat"
+      }
+    ]
+  },
   "comicskingdom.com": {
     "_name": "Comics Kingdom",
     ".": [
@@ -5362,6 +5426,19 @@
       }
     ]
   },
+  "deadline.com": {
+    "_name": "Deadline",
+    ".": [
+      {
+        "title": "Latest Articles",
+        "docs": "https://docs.rsshub.app/en/new-media.html#deadline",
+        "source": [
+          "/"
+        ],
+        "target": "/deadline"
+      }
+    ]
+  },
   "dedao.cn": {
     "_name": "得到",
     ".": [
@@ -5441,6 +5518,17 @@
       }
     ]
   },
+  "devolverdigital.com": {
+    "_name": "DevolverDigital",
+    ".": [
+      {
+        "title": "官方博客",
+        "docs": "https://docs.rsshub.app/blog.html#devolverdigital",
+        "source": "/blog",
+        "target": "/devolverdigital/blog"
+      }
+    ]
+  },
   "dgjyw.com": {
     "_name": "东莞教研网",
     ".": [
@@ -5509,10 +5597,10 @@
         "title": "Channel Messages",
         "docs": "https://docs.rsshub.app/en/social-media.html#discord",
         "source": [
-          "/channels/:guildId/:channelID/:messageID",
-          "/channels/:guildId/:channelID"
+          "/channels/:guildId/:channelId/:messageID",
+          "/channels/:guildId/:channelId"
         ],
-        "target": "/discord/channel/:channelID"
+        "target": "/discord/channel/:channelId"
       }
     ]
   },
@@ -6111,6 +6199,29 @@
           "/archives/tag/:tag"
         ],
         "target": "/dx2025/tag/:tag"
+      }
+    ]
+  },
+  "dxy.cn": {
+    "_name": "丁香园",
+    ".": [
+      {
+        "title": "个人帖子",
+        "docs": "https://docs.rsshub.app/bbs.html#ding-xiang-yuan",
+        "source": [
+          "/bbs/newweb/pc/profile/:userId/threads",
+          "/bbs/newweb/pc/profile/:userId"
+        ],
+        "target": "/dxy/bbs/profile/thread/:userId"
+      }
+    ],
+    "3g": [
+      {
+        "title": "专题",
+        "docs": "https://docs.rsshub.app/bbs.html#ding-xiang-yuan",
+        "source": [
+          "/bbs/special"
+        ]
       }
     ]
   },
@@ -7466,6 +7577,15 @@
         "docs": "https://docs.rsshub.app/finance.html#fx-markets",
         "source": "/regulation",
         "target": "/fx-markets/regulation"
+      }
+    ]
+  },
+  "fzmtr.com": {
+    "_name": "福州地铁",
+    "www": [
+      {
+        "title": "通知公告",
+        "docs": "https://docs.rsshub.app/travel.html#fu-zhou-di-tie"
       }
     ]
   },
@@ -9256,6 +9376,15 @@
         "source": [
           "/cheaps.php"
         ]
+      }
+    ]
+  },
+  "gzmtr.com": {
+    "_name": "广州地铁",
+    "www": [
+      {
+        "title": "新闻",
+        "docs": "https://docs.rsshub.app/travel.html#guang-zhou-di-tie"
       }
     ]
   },
@@ -15937,6 +16066,19 @@
       }
     ]
   },
+  "notion.so": {
+    "_name": "Notion",
+    ".": [
+      {
+        "title": "Database",
+        "docs": "https://docs.rsshub.app/other.html#notion",
+        "source": [
+          "/:id"
+        ],
+        "target": "/notion/database/:id"
+      }
+    ]
+  },
   "news.now.com": {
     "_name": "Now 新聞",
     ".": [
@@ -20411,6 +20553,27 @@
       }
     ]
   },
+  "techpowerup.com": {
+    "_name": "TechPowerUp",
+    ".": [
+      {
+        "title": "Latest Content",
+        "docs": "https://docs.rsshub.app/en/new-media.html#techpowerup",
+        "source": [
+          "/"
+        ],
+        "target": "/techpowerup"
+      },
+      {
+        "title": "Reviews",
+        "docs": "https://docs.rsshub.app/en/new-media.html#techpowerup",
+        "source": [
+          "/review/search",
+          "/review"
+        ]
+      }
+    ]
+  },
   "telecompaper.com": {
     "_name": "Telecompaper",
     ".": [
@@ -20915,6 +21078,19 @@
       }
     ]
   },
+  "sz-water.com.cn": {
+    "_name": "停水通知",
+    ".": [
+      {
+        "title": "深圳市",
+        "docs": "https://docs.rsshub.app/forecast.html#ting-shui-tong-zhi",
+        "source": [
+          "/*"
+        ],
+        "target": "/tingshuitz/shenzhen"
+      }
+    ]
+  },
   "whwater.com": {
     "_name": "停水通知",
     ".": [
@@ -20954,6 +21130,19 @@
           "/"
         ],
         "target": "/tingshuitz/yangjiang"
+      }
+    ]
+  },
+  "tingtingfm.com": {
+    "_name": "听听 FM",
+    "mobile": [
+      {
+        "title": "节目",
+        "docs": "https://docs.rsshub.app/multimedia.html#ting-ting-fm",
+        "source": [
+          "/v3/program/:programId"
+        ],
+        "target": "/tingtingfm/program/:programId"
       }
     ]
   },
@@ -22426,9 +22615,9 @@
       }
     ]
   },
-  "feeddd.org": {
+  "hamibot.com": {
     "_name": "微信",
-    ".": [
+    "feed": [
       {
         "title": "公众号（feeddd 来源）",
         "docs": "https://docs.rsshub.app/new-media.html#wei-xin",
@@ -23505,12 +23694,12 @@
     "_name": "読売新聞",
     "www": [
       {
-        "title": "読売新聞",
+        "title": "新聞",
         "docs": "https://docs.rsshub.app/traditional-media.html#du-mai-xin-wen",
         "source": [
-          "/:category"
+          "/:category?"
         ],
-        "target": "/yomiuri/:category"
+        "target": "/yomiuri/:category?"
       }
     ]
   },
@@ -24435,6 +24624,18 @@
         "source": [
           "/:region/:id",
           "/:id",
+          "/"
+        ]
+      }
+    ]
+  },
+  "zyw.asia": {
+    "_name": "zyw",
+    "hot": [
+      {
+        "title": "今日热榜",
+        "docs": "https://docs.rsshub.app/new-media.html#zyw-jin-ri-re-bang",
+        "source": [
           "/"
         ]
       }
