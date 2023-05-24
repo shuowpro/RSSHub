@@ -185,6 +185,22 @@ pageClass: routes
 
 <Route author="nczitzk" example="/asml/press-releases" path="/asml/press-releases"/>
 
+## Bad.news
+
+### 通用
+
+<Route author="nczitzk" example="/bad" path="/bad/:path+" :paramsDesc="['路径，默认为首页热门']">
+
+::: tip 提示
+
+若订阅 [每日热点 - 最新](https://bad.news/tag/每日热点/sort-new)，网址为 [https://bad.news/tag/ 每日热点 /sort-new](https://bad.news/tag/每日热点/sort-new)。截取 `https://bad.news` 到末尾的部分 `/tag/每日热点/sort-new` 作为参数，此时路由为 [`/bad/tag/每日热点/sort-new`](https://rsshub.app/bad/tag/每日热点/sort-new)。
+
+若订阅子分类 [大陆资讯 - 热门](https://bad.news/tag/大陆资讯/sort-hot)，网址为 [https://bad.news/tag/ 大陆资讯 /sort-hot](https://bad.news/tag/大陆资讯/sort-hot)。截取 `https://bad.news` 到末尾的部分 `/tag/大陆资讯/sort-hot` 作为参数，路由为 [`/bad/tag/大陆资讯/sort-hot`](https://rsshub.app/bad/tag/大陆资讯/sort-hot)。
+
+:::
+
+</Route>
+
 ## Bell Labs
 
 ### Event and News
@@ -1544,6 +1560,23 @@ Supported sub-sites:
 ### 精读
 
 <Route author="AlexdanerZe TonyRL" example="/zaker/focusread" path="/zaker/focusread" />
+
+## zyw
+
+### 今日热榜
+
+<Route author="nczitzk" example="/zyw/hot" path="/zyw/hot/:site?" :paramsDesc="['站点，见下表，默认为空，即全部']">
+
+::: tip 提示
+
+全部站点请见 [此处](https://hot.zyw.asia/#/list)
+
+:::
+
+| 哔哩哔哩 | 微博 | 知乎 | 36 氪 | 百度 | 少数派 | IT 之家 | 澎湃新闻 | 今日头条 | 百度贴吧 | 稀土掘金 | 腾讯新闻 |
+| -------- | ---- | ---- | ----- | ---- | ------ | ------- | -------- | -------- | -------- | -------- | -------- |
+
+</Route>
 
 ## 阿里研究院
 
@@ -4086,7 +4119,16 @@ column 为 third 时可选的 category:
 
 ### 公众号（feeddd 来源）
 
-<Route author="TonyRL Rongronggg9" example="/wechat/feeddd/6131e1441269c358aa0e2141" path="/wechat/feeddd/:id" :paramsDesc="['公众号 id，打开 `https://feeddd.org/feeds` 或 `https://cdn.jsdelivr.net/gh/feeddd/feeds/feeds_all_rss.txt`，在 URL 中找到 id；注意不是公众号页的 id，而是订阅的 id']"/>
+::: warning 注意
+
+feeddd 网站不提供检索功能，请自行在 <https://cdn.jsdelivr.net/gh/feeddd/feeds/feeds_all_rss.txt> 中检索所需公众号。\
+也可以在 <https://feed.hamibot.com/feeds> 上找到最近更新的公众号。请注意公众号页 id 与订阅时实际使用的 id 不同，请先复制订阅链接，再从中获取 id。
+
+feeddd 自 2023/05/04 已更换域名，原 `feeddd.org` 已失效，现在使用 `feed.hamibot.com`。请及时更新自建实例。
+
+:::
+
+<Route author="TonyRL Rongronggg9" example="/wechat/feeddd/6131e1441269c358aa0e2141" path="/wechat/feeddd/:id" :paramsDesc="['公众号 id，详见上方说明']"/>
 
 ### 公众号（自由微信来源）
 
